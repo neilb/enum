@@ -1,39 +1,47 @@
-      $Log: enum.pm,v $
-      Revision 1.12  1999/05/13 10:00:45  byron
+Revision history for perl module enum
 
-      Added support for non-decimal numeric representations ala 0x123, 0644, and
-      123_456.
+1.02 2013-08-24 NEILB
+    - Neil Bowers (NEILB) has taken over maintenance from Byron (thanks Byron!)
+    - Reformatted this file (Changes) as per CPAN::Changes::Spec
 
-      First version committed to CVS.
+1.016 1999-05-27 ZENIN
+    - Last release by ZENIN (Byron Brummer)
 
-      Revision 1.11  1998/07/18 17:53:05  byron
-        -Added BITMASK and ENUM directives.
-        -Revamped documentation.
+1.015 1999-05-22 ZENIN
 
-      Revision 1.10  1998/06/12 20:12:50  byron
-        -Removed test code
-        -Released to CPAN
+1.014 1999-05-13 ZENIN
+    - Added support for non-decimal numeric representations
+      ala 0x123, 0644, and 123_456.
+    - First version committed to CVS.
 
-      Revision 1.9  1998/06/12 00:21:00  byron
-        -Fixed -w warning when a null tag is used
+1.011 1998-07-18 ZENIN
+    - Added BITMASK and ENUM directives.
+    - Revamped documentation.
 
-      Revision 1.8  1998/06/11 23:04:53  byron
-        -Fixed documentation bugs
-        -Moved A..Z case to last as it's not going to be used
-         as much as the other cases.
+1.010 1998-06-12 ZENIN
+    - Removed test code
+    - Released to CPAN
 
-      Revision 1.7  1998/06/10 12:25:04  byron
-        -Changed interface to match original design by Tom Phoenix
-         as implemented in an early version of enum.pm by Benjamin Holzman.
-        -Changed tag syntax to not require the 'PREFIX' string of Tom's
-         interface.
-        -Allow multiple prefix tags to be used at any point.
-        -Allowed index value changes from tags.
+1.009 1998-06-11 ZENIN
+    - Fixed -w warning when a null tag is used
 
-      Revision 1.6  1998/06/10 03:37:57  byron
-        -Fixed superfulous -w warning
+1.008 1998-06-11 ZENIN
+    - Fixed documentation bugs
+    - Moved A..Z case to last as it's not going to be used
+      as much as the other cases.
 
-      Revision 1.4  1998/06/10 01:07:03  byron
-        -Changed behaver to closer resemble C enum types
-        -Changed docs to match new behaver
+1.007 1998-06-10 ZENIN
+    - Changed interface to match original design by Tom Phoenix
+      as implemented in an early version of enum.pm by Benjamin Holzman.
+    - Changed tag syntax to not require the 'PREFIX' string of Tom's
+      interface.
+    - Allow multiple prefix tags to be used at any point.
+    - Allowed index value changes from tags.
+
+1.6 1998-06-10 ZENIN
+    - Fixed superfulous -w warning
+
+1.4 1998-06-10 ZENIN
+    - Changed behaver to closer resemble C enum types
+    - Changed docs to match new behaver
 
