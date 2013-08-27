@@ -1,18 +1,32 @@
-Revision history for perl module enum
+Revision history for Perl module enum
 
-1.02 2013-08-24 NEILB
+1.02 2013-08-27 NEILB
     - Neil Bowers (NEILB) has taken over maintenance from Byron (thanks Byron!)
     - Reformatted this file (Changes) as per CPAN::Changes::Spec
+    - Some of the revision history was in this file, some was in the pod;
+      I think I've merged them correctly.
 
 1.016 1999-05-27 ZENIN
+    - Fixed bug that caused bitwise operators to treat enum types as strings
+      instead of numbers.
     - Last release by ZENIN (Byron Brummer)
 
 1.015 1999-05-22 ZENIN
+    - Add support for negative values.
+    - Added stricter hex value checks.
 
-1.014 1999-05-13 ZENIN
+1.014 1999-05-13 15:58:18 ZENIN
     - Added support for non-decimal numeric representations
       ala 0x123, 0644, and 123_456.
     - First version committed to CVS.
+    - Fixed bug in hex index code that broke on 0xA.
+
+1.013 1999-05-13 10:52:30 ZENIN
+    - Fixed auto-index bugs in new non-decimal numeric support.
+
+1.012 1999-05-13 10:00:45 ZENIN
+    - Added support for non-decimal numeric representations
+      ala 0x123, 0644, and 123_456.
 
 1.011 1998-07-18 ZENIN
     - Added BITMASK and ENUM directives.

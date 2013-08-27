@@ -1,5 +1,6 @@
 package enum;
 use strict;
+use warnings;
 no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
@@ -293,79 +294,12 @@ other pragma modules are.
 It supports A..Z nonsense.  Can anyone give me a Real World[tm] reason why anyone would
 ever use this feature...?
 
-=head1 HISTORY
-
-  $Log: enum.pm,v $
-  Revision 1.16  1999/05/27 16:00:35  byron
-
-
-  Fixed bug that caused bitwise operators to treat enum types as strings
-  instead of numbers.
-
-  Revision 1.15  1999/05/27 15:51:27  byron
-
-
-  Add support for negative values.
-
-  Added stricter hex value checks.
-
-  Revision 1.14  1999/05/13 15:58:18  byron
-
-
-  Fixed bug in hex index code that broke on 0xA.
-
-  Revision 1.13  1999/05/13 10:52:30  byron
-
-
-  Fixed auto-index bugs in new non-decimal numeric support.
-
-  Revision 1.12  1999/05/13 10:00:45  byron
-
-
-  Added support for non-decimal numeric representations ala 0x123, 0644, and
-  123_456.
-
-  First version committed to CVS.
-
-
-  Revision 1.11  1998/07/18 17:53:05  byron
-    -Added BITMASK and ENUM directives.
-    -Revamped documentation.
-
-  Revision 1.10  1998/06/12 20:12:50  byron
-    -Removed test code
-    -Released to CPAN
-
-  Revision 1.9  1998/06/12 00:21:00  byron
-    -Fixed -w warning when a null tag is used
-
-  Revision 1.8  1998/06/11 23:04:53  byron
-    -Fixed documentation bugs
-    -Moved A..Z case to last as it's not going to be used
-     as much as the other cases.
-
-  Revision 1.7  1998/06/10 12:25:04  byron
-    -Changed interface to match original design by Tom Phoenix
-     as implemented in an early version of enum.pm by Benjamin Holzman.
-    -Changed tag syntax to not require the 'PREFIX' string of Tom's
-     interface.
-    -Allow multiple prefix tags to be used at any point.
-    -Allowed index value changes from tags.
-
-  Revision 1.6  1998/06/10 03:37:57  byron
-    -Fixed superfulous -w warning
-
-  Revision 1.4  1998/06/10 01:07:03  byron
-    -Changed behaver to closer resemble C enum types
-    -Changed docs to match new behaver
-
 =head1 AUTHOR
 
-Zenin <zenin@archive.rhps.org>
+Originally written by Byron Brummer (ZENIN),
+now maintained by Neil Bowers E<lt>neilb@cpan.orgE<gt>.
 
-aka Byron Brummer <byron@omix.com>.
-
-Based off of the B<constant> module by Tom Phoenix.
+Based on early versions of the B<constant> module by Tom Phoenix.
 
 Original implementation of an interface of Tom Phoenix's
 design by Benjamin Holzman, for which we borrow the basic
@@ -381,6 +315,7 @@ the same terms as B<Perl>.
 
 =head1 SEE ALSO
 
-constant(3), perl(1).
+L<constant>
 
 =cut
+
