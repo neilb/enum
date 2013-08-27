@@ -3,7 +3,7 @@ README
 INSTALL
 MANIFEST
 Makefile.PL
-enum.pm
+lib/enum.pm
 t/dot_dot.t
 t/new_index.t
 t/new_package.t
