@@ -3,8 +3,7 @@ use strict;
 no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
-use vars qw($VERSION);
-$VERSION = do { my @r = (q$Revision: 1.16 $ =~ /\d+/g); sprintf '%d.%03d'.'%02d' x ($#r-1), @r};
+our $VERSION = '1.02';
 
 my $Ident = '[^\W_0-9]\w*';
 
