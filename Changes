@@ -1,10 +1,11 @@
 Revision history for Perl module enum
 
-1.02 2013-08-27 NEILB
+1.016_01 2013-08-27 NEILB
     - Neil Bowers (NEILB) has taken over maintenance from Byron (thanks Byron!)
     - Reformatted this file (Changes) as per CPAN::Changes::Spec
     - Some of the revision history was in this file, some was in the pod;
       I think I've merged them correctly.
+    - Added licence and repository metadata to Makefile.PL
 
 1.016 1999-05-27 ZENIN
     - Fixed bug that caused bitwise operators to treat enum types as strings
