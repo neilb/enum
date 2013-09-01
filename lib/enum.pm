@@ -4,7 +4,7 @@ use warnings;
 no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
-our $VERSION = '1.016_01';
+our $VERSION = '1.02';
 
 my $Ident = '[^\W_0-9]\w*';
 
@@ -294,6 +294,16 @@ other pragma modules are.
 It supports A..Z nonsense.  Can anyone give me a Real World[tm] reason why anyone would
 ever use this feature...?
 
+=head1 SEE ALSO
+
+There are many CPAN modules related to defining constants in Perl;
+here are some of the best ones:
+L<constant>, L<Const::Fast>, L<constant::lexical>, L<constant::our>.
+
+Neil Bowers has written a
+L<review of CPAN modules for definining constants|http://neilb.org/reviews/constants.html>,
+which covers all such modules.
+
 =head1 AUTHOR
 
 Originally written by Byron Brummer (ZENIN),
@@ -312,10 +322,6 @@ Copyright 1998 (c) OMIX, Inc.
 
 Permission to use, modify, and redistribute this module granted under
 the same terms as B<Perl>.
-
-=head1 SEE ALSO
-
-L<constant>
 
 =cut
 

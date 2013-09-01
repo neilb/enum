@@ -1,5 +1,8 @@
 Revision history for Perl module enum
 
+1.02 2013-09-01 NEILB
+    - Added links to other modules and my review, in SEE ALSO
+
 1.016_01 2013-08-27 NEILB
     - Neil Bowers (NEILB) has taken over maintenance from Byron (thanks Byron!)
     - Reformatted this file (Changes) as per CPAN::Changes::Spec
