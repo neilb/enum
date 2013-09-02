@@ -4,7 +4,7 @@ use warnings;
 no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 
 my $Ident = '[^\W_0-9]\w*';
 
@@ -295,6 +295,9 @@ It supports A..Z nonsense.  Can anyone give me a Real World[tm] reason why anyon
 ever use this feature...?
 
 =head1 SEE ALSO
+
+There are a number of modules that can be used to define enumerations:
+L<Class::Enum>, L<enum::fields>, L<enum::hash>, L<Readonly::Enum>, L<Object::Enum>.
 
 There are many CPAN modules related to defining constants in Perl;
 here are some of the best ones:
