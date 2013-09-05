@@ -1,6 +1,6 @@
 Revision history for Perl module enum
 
-1.04 2013-09-02 NEILB
+1.04 2013-09-05 NEILB
     - Bumped version so I can release, now the offending CORBA-IDL
       release has been deleted from CPAN.
 
