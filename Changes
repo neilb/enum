@@ -1,10 +1,16 @@
 Revision history for Perl module enum
 
+1.04 2013-09-02 NEILB
+    - Bumped version so I can release, now the offending CORBA-IDL
+      release has been deleted from CPAN.
+
 1.03 2013-09-02 NEILB
     - Added links to enumeration modules in SEE ALSO section.
+    - Failed to index, due to clash with Enum module in CORBA-IDL
 
 1.02 2013-09-01 NEILB
     - Added links to other modules and my review, in SEE ALSO
+    - Failed to index, due to clash with PAUSE permissions for Enum module
 
 1.016_01 2013-08-27 NEILB
     - Neil Bowers (NEILB) has taken over maintenance from Byron (thanks Byron!)
