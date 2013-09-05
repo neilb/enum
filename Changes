@@ -1,5 +1,10 @@
 Revision history for Perl module enum
 
+1.05 2013-09-06 NEILB
+    - I'd got two versions wrong when merging the history information
+      from the pod into Changes. As a result the previous release was
+      failing conformance with CPAN::Changes::Spec
+
 1.04 2013-09-05 NEILB
     - Bumped version so I can release, now the offending CORBA-IDL
       release has been deleted from CPAN.
@@ -65,10 +70,10 @@ Revision history for Perl module enum
     - Allow multiple prefix tags to be used at any point.
     - Allowed index value changes from tags.
 
-1.6 1998-06-10 ZENIN
+1.006 1998-06-10 ZENIN
     - Fixed superfulous -w warning
 
-1.4 1998-06-10 ZENIN
+1.004 1998-06-10 ZENIN
     - Changed behaver to closer resemble C enum types
     - Changed docs to match new behaver
 

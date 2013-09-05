@@ -4,7 +4,7 @@ use warnings;
 no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
-our $VERSION = '1.04';
+our $VERSION = '1.05';
 
 my $Ident = '[^\W_0-9]\w*';
 
