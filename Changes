@@ -1,6 +1,7 @@
 Revision history for Perl module enum
 
 1.06 2014-01-25 NEILB
+    - Specified MIN_PERL_VERSION as 5.006 in Makefile.PL
     - Changed the COPYRIGHT section to COPYRIGHT AND LICENSE
       so Kwalitee / CPANTS would see it.
 
