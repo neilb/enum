@@ -1,5 +1,9 @@
 Revision history for Perl module enum
 
+1.06 2014-01-25 NEILB
+    - Changed the COPYRIGHT section to COPYRIGHT AND LICENSE
+      so Kwalitee / CPANTS would see it.
+
 1.05 2013-09-06 NEILB
     - I'd got two versions wrong when merging the history information
       from the pod into Changes. As a result the previous release was

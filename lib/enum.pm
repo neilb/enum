@@ -4,7 +4,7 @@ use warnings;
 no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
-our $VERSION = '1.05';
+our $VERSION = '1.06';
 
 my $Ident = '[^\W_0-9]\w*';
 
@@ -318,13 +318,13 @@ Original implementation of an interface of Tom Phoenix's
 design by Benjamin Holzman, for which we borrow the basic
 parse algorithm layout.
 
-=head1 COPYRIGHT
+=head1 COPYRIGHT AND LICENSE
 
 Copyright 1998 (c) Byron Brummer.
 Copyright 1998 (c) OMIX, Inc.
 
 Permission to use, modify, and redistribute this module granted under
-the same terms as B<Perl>.
+the same terms as Perl itself.
 
 =cut
 
