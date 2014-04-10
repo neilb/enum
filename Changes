@@ -1,6 +1,7 @@
 Revision history for Perl module enum
 
 1.07 2014-04-10 NEILB
+    - Playing with Devel::Cover, starting to improve coverage of testsuite
     - Added testsuite for hex and octal index values, and _ in long numbers
     - Added testsuite for bitmask wrap-around cases
 
