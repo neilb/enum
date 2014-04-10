@@ -1,5 +1,8 @@
 Revision history for Perl module enum
 
+1.07 2014-04-10 NEILB
+    - Added testsuite for hex and octal index values, and _ in long numbers
+
 1.06 2014-01-25 NEILB
     - Specified MIN_PERL_VERSION as 5.006 in Makefile.PL
     - Changed the COPYRIGHT section to COPYRIGHT AND LICENSE
