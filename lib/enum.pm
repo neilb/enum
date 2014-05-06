@@ -4,7 +4,7 @@ use warnings;
 no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
-our $VERSION = '1.07';
+our $VERSION = '1.08';
 
 my $Ident = '[^\W_0-9]\w*';
 
@@ -43,7 +43,7 @@ sub import {
                 confess qq(Can't Happen: mode $mode invalid);
             }
 
-            *{"$pkg$prefix$_"} = sub () { $n };
+            *{"$pkg$prefix$_"} = eval "sub () { $n }";
         }
 
         ## Index change
@@ -53,13 +53,13 @@ sub import {
             $index  = $3;
 
             ## Convert non-decimal numerics to decimal
-            if ($index =~ /^0x[\da-f]+$/i) {    ## Hex
+            if ($index =~ /^0x[0-9a-f]+$/i) {    ## Hex
                 $index = hex $index;
             }
-            elsif ($index =~ /^0\d/) {          ## Octal
+            elsif ($index =~ /^0[0-9]/) {          ## Octal
                 $index = oct $index;
             }
-            elsif ($index !~ /[^\d_]/) {        ## 123_456 notation
+            elsif ($index !~ /[^0-9_]/) {        ## 123_456 notation
                 $index =~ s/_//g;
             }
 
@@ -86,7 +86,7 @@ sub import {
                 confess qq(Can't Happen: mode $mode invalid);
             }
 
-            *{"$pkg$prefix$name"} = sub () { $n };
+            *{"$pkg$prefix$name"} = eval "sub () { $n }";
         }
 
         ## Prefix/option change
@@ -106,18 +106,18 @@ sub import {
                     $index = $5;
 
                     ## Convert non-decimal numerics to decimal
-                    if ($index =~ /^0x[\da-f]+$/i) {    ## Hex
+                    if ($index =~ /^0x[0-9a-f]+$/i) {    ## Hex
                         $index = hex $index;
                     }
-                    elsif ($index =~ /^0\d/) {          ## Oct
+                    elsif ($index =~ /^0[0-9]/) {          ## Oct
                         $index = oct $index;
                     }
-                    elsif ($index !~ /[^\d_]/) {        ## 123_456 notation
+                    elsif ($index !~ /[^0-9_]/) {        ## 123_456 notation
                         $index =~ s/_//g;
                     }
 
                     ## Force numeric context, but only in numeric context
-                    if ($index =~ /\D/) {
+                    if ($index =~ /[^0-9]/) {
                         $index  = "$neg$index";
                     }
                     else {
@@ -158,7 +158,7 @@ sub import {
                     confess qq(Can't Happen: mode $mode invalid);
                 }
 
-                *{"$pkg$prefix$name"} = sub () { $n };
+                *{"$pkg$prefix$name"} = eval "sub () { $n }";
             }
         }
 

@@ -1,5 +1,13 @@
 Revision history for Perl module enum
 
+1.08 2014-05-06 NEILB
+    - Changed how the constants are defined, to deal with a change in 5.19.3
+      "Closures of the form "sub () { $some_variable }" are no longer
+       inlined, causing changes to the variable to be ignored by callers of
+       the subroutine. [perl #79908]"
+      RT#95387 - thanks to Slaven Rezic.
+    - Changed use of \d to [0-9]
+
 1.07 2014-04-10 NEILB
     - Playing with Devel::Cover, starting to improve coverage of testsuite
     - Added testsuite for hex and octal index values, and _ in long numbers
