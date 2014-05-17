@@ -1,5 +1,8 @@
 Revision history for Perl module enum
 
+1.09 2014-05-26 NEILB
+    - Added some more modules to the SEE ALSO section
+
 1.08 2014-05-06 NEILB
     - Changed how the constants are defined, to deal with a change in 5.19.3
       "Closures of the form "sub () { $some_variable }" are no longer

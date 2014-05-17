@@ -4,7 +4,7 @@ use warnings;
 no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
-our $VERSION = '1.08';
+our $VERSION = '1.09';
 
 my $Ident = '[^\W_0-9]\w*';
 
@@ -297,7 +297,12 @@ ever use this feature...?
 =head1 SEE ALSO
 
 There are a number of modules that can be used to define enumerations:
-L<Class::Enum>, L<enum::fields>, L<enum::hash>, L<Readonly::Enum>, L<Object::Enum>.
+L<Class::Enum>, L<enum::fields>, L<enum::hash>, L<Readonly::Enum>,
+L<Object::Enum>, L<Enumeration>.
+
+If you're using L<Moose>, then L<MooseX::Enumeration> may be of interest.
+L<Type::Tiny::Enum> is part of the
+L<Type-Tiny|https://metacpan.org/release/Type-Tiny> distribution.
 
 There are many CPAN modules related to defining constants in Perl;
 here are some of the best ones:
