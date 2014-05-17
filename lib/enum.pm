@@ -312,6 +312,10 @@ Neil Bowers has written a
 L<review of CPAN modules for definining constants|http://neilb.org/reviews/constants.html>,
 which covers all such modules.
 
+=head1 REPOSITORY
+
+L<https://github.com/neilbowers/enum>
+
 =head1 AUTHOR
 
 Originally written by Byron Brummer (ZENIN),
