@@ -206,13 +206,15 @@ enum - C style enumerated types and bitmask flags in Perl
 
 =head1 DESCRIPTION
 
-Defines a set of symbolic constants with ordered numeric values ala B<C> B<enum> types.
+The B<enum> module is used to define a set of symbolic constants
+that will typically have ordered numeric values;
+they are similar to the I<enum> type in the C programming language.
+The module can also be used to define bitmask constants,
+which are described in L</"BITMASKS"> below.
 
-Now capable of creating creating ordered bitmask constants as well.  See the B<BITMASKS>
-section for details.
-
-What are they good for?  Typical uses would be for giving mnemonic names to indexes of
-arrays.  Such arrays might be a list of months, days, or a return value index from
+What are enumerations good for?
+Typical uses would be for giving mnemonic names to indexes of arrays.
+Such arrays might be a list of months, days, or a return value index from
 a function such as localtime():
 
   use enum qw(
@@ -232,7 +234,7 @@ This not only reads easier, but can also be typo-checked at compile time when
 run under B<use strict>.  That is, if you misspell B<Days_Fri> as B<Days_Fry>,
 you'll generate a compile error.
 
-=head1 BITMASKS, bitwise operations, and bitmask option values
+=head1 BITMASKS
 
 The B<BITMASK> option allows the easy creation of bitmask constants such as
 functions like flock() and sysopen() use.  These are also very useful for your

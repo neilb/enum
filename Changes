@@ -2,6 +2,7 @@ Revision history for Perl module enum
 
 1.09 2014-05-26 NEILB
     - Added some more modules to the SEE ALSO section
+    - Various documentation improvements
     - Added github repo to the pod
 
 1.08 2014-05-06 NEILB
