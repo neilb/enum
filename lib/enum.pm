@@ -6,7 +6,7 @@ use warnings;
 no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
-our $VERSION = '1.09';
+our $VERSION = '1.10';
 
 my $Ident = '[^\W_0-9]\w*';
 
@@ -208,11 +208,10 @@ enum - C style enumerated types and bitmask flags in Perl
 
 =head1 DESCRIPTION
 
-The B<enum> module is used to define a set of symbolic constants
-that will typically have ordered numeric values;
-they are similar to the I<enum> type in the C programming language.
-The module can also be used to define bitmask constants,
-which are described in L</"BITMASKS"> below.
+This module is used to define a set of constants with ordered numeric values,
+similar to the C<enum> type in the C programming language.
+You can also define bitmask constants, where the value assigned to each
+constant has exactly one bit set (eg 1, 2, 4, 8, etc).
 
 What are enumerations good for?
 Typical uses would be for giving mnemonic names to indexes of arrays.
@@ -258,17 +257,25 @@ a single integer.
 
     $foo ^= MY_DOG;  ## Turn MY_DOG option off (set its bit to false)
 
-When using bitmasks, remember that you must use the bitwise operators, B<|>, B<&>, B<^>,
-and B<~>.  If you try to do an operation like C<$foo += MY_DOG;> and the B<MY_DOG> bit
-has already been set, you'll end up setting other bits you probably didn't want to set.
+When using bitmasks, remember that you must use the bitwise operators,
+B<|>, B<&>, B<^>, and B<~>.
+If you try to do an operation like C<$foo += MY_DOG;> and the B<MY_DOG> bit
+has already been set,
+you'll end up setting other bits you probably didn't want to set.
 You'll find the documentation for these operators in the B<perlop> manpage.
 
-You can set a starting index for bitmasks just as you can for normal B<enum> values,
-but if the given index isn't a power of 2 it won't resolve to a single bit and therefor
-will generate a compile error.  Because of this, whenever you set the B<BITFIELD:>
-directive, the index is automatically set to 1.  If you wish to go back to normal B<enum>
-mode, use the B<ENUM:> directive.  Similarly to the B<BITFIELD> directive, the B<ENUM:>
-directive resets the index to 0.  Here's an example:
+You can set a starting index for bitmasks
+just as you can for normal B<enum> values.
+But if the given index isn't a power of 2,
+then it won't resolve to a single bit and therefore
+will generate a compile error.
+Because of this, whenever you set the B<BITFIELD:> directive,
+the index is automatically set to 1.
+If you wish to go back to normal B<enum> mode,
+use the B<ENUM:> directive.
+Similarly to the B<BITFIELD> directive,
+the B<ENUM:> directive resets the index to 0.
+Here's an example:
 
   use enum qw(
       BITMASK:BITS_ FOO BAR CAT DOG
@@ -295,7 +302,8 @@ to be a compile time error.
 Enumerated types are package scoped just like constants, not block scoped as some
 other pragma modules are.
 
-It supports A..Z nonsense.  Can anyone give me a Real World[tm] reason why anyone would
+It supports A..Z nonsense.
+Can anyone give me a Real World[tm] reason why anyone would
 ever use this feature...?
 
 =head1 SEE ALSO

@@ -2,6 +2,8 @@ Revision history for Perl module enum
 
 1.10 2014-08-16 NEILB
     - Added min perl version (5.006) to enum.pm
+    - Improved DESCRIPTION: reworded first paragraph to be a better summary,
+      fixed formatting, and one typo.
 
 1.09 2014-05-26 NEILB
     - Added some more modules to the SEE ALSO section
