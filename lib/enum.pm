@@ -1,4 +1,6 @@
 package enum;
+
+use 5.006;
 use strict;
 use warnings;
 no strict 'refs';  # Let's just make this very clear right off
