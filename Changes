@@ -1,5 +1,8 @@
 Revision history for Perl module enum
 
+1.11 2015-10-27 NEILB
+    - Updated github repo URL after changing my github username
+
 1.10 2014-08-16 NEILB
     - Added min perl version (5.006) to enum.pm
     - Improved DESCRIPTION: reworded first paragraph to be a better summary,

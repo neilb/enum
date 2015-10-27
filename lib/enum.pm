@@ -6,7 +6,7 @@ use warnings;
 no strict 'refs';  # Let's just make this very clear right off
 
 use Carp;
-our $VERSION = '1.10';
+our $VERSION = '1.11';
 
 my $Ident = '[^\W_0-9]\w*';
 
@@ -247,7 +247,7 @@ a single integer.
     my $foo = 0;
     $foo |= MY_FOO;
     $foo |= MY_DOG;
-    
+
     if ($foo & MY_DOG) {
         print "foo has the MY_DOG option set\n";
     }
@@ -326,7 +326,7 @@ which covers all such modules.
 
 =head1 REPOSITORY
 
-L<https://github.com/neilbowers/enum>
+L<https://github.com/neilb/enum>
 
 =head1 AUTHOR
 
