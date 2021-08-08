@@ -1,6 +1,6 @@
 The 'enum' module for Perl
 
-This module is used to efine a set of symbolic constants with ordered numeric values
+This module is used to define a set of symbolic constants with ordered numeric values
 similar to enum types in the C programming language.
 
 Now capable of creating creating ordered bitmask constants as well. See
@@ -26,4 +26,3 @@ return value index from a function such as localtime():
 This not only reads easier, but can also be typo-checked at compile time
 when run under use strict. That is, if you misspell Days_Fri as
 Days_Fry, you'll generate a compile error.
-
